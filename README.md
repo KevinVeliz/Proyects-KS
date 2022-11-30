@@ -1,4 +1,4 @@
-<img src="./src/assets/logo.png" height="50px"/>
+<img src="https://user-images.githubusercontent.com/65980001/204894077-abc29c5b-6cf1-4a35-810a-baece92a85e9.png" height="50px"/>
 
 # Kruger Star PlayGround
 
