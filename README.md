@@ -4,13 +4,13 @@
 
 > Segundo Proyecto
 
-<img src="./src/assets/todo.png" height="300px"/>
+<img src="https://user-images.githubusercontent.com/65980001/204893673-f50d3840-72ec-4083-aec5-06a4b55a9dc8.png" width="400px"/>
 
 ## Built with 
 
 - JavaScript 
 - React.js 18
-- Netlify
+- Vercel
 - HTML + CSS
 
 ## Live Demo
