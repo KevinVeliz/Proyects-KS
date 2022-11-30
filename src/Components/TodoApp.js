@@ -11,6 +11,7 @@ const TodoApp = () => {
     const [title, setTitle] = useState("");
     const [todos, setTodos] = useState(todosList);
 
+    
    useEffect(()=>{
     localStorage.setItem("To-do", JSON.stringify(todos));
    })
