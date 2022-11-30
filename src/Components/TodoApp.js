@@ -2,7 +2,7 @@ import '../Styles/TodoApp.css'
 import { useEffect, useState } from "react";
 import Todo from "./todo";
 
-const todosList = () =>{
+const todosList = () => {
     return JSON.parse(localStorage.getItem("To-do"));
 }
 
@@ -11,10 +11,9 @@ const TodoApp = () => {
     const [title, setTitle] = useState("");
     const [todos, setTodos] = useState(todosList);
 
-    
-   useEffect(()=>{
-    localStorage.setItem("To-do", JSON.stringify(todos));
-   })
+    useEffect(() => {
+        localStorage.setItem("To-do", JSON.stringify(todos));
+    })
 
     function handleInput(e) {
         const value = e.target.value
@@ -23,8 +22,8 @@ const TodoApp = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        
-        if(title === ""){
+
+        if (title === "") {
             alert("Please enter a title")
         }
         else {
@@ -34,11 +33,11 @@ const TodoApp = () => {
                 title: title,
                 completed: false
             }
-    
-            let todosMap = todos.map((todos) =>(todos.title))
+
+            let todosMap = todos.map((todos) => (todos.title))
             let todosInclude = todosMap.includes(title)
 
-            if(todosInclude !== true){
+            if (todosInclude !== true) {
                 const temp = [...todos]
                 temp.unshift(newTodo);
                 setTodos(temp);
@@ -48,7 +47,7 @@ const TodoApp = () => {
                 setTitle('')
             }
         }
-       
+
     }
 
 
@@ -61,7 +60,7 @@ const TodoApp = () => {
 
     function handleDelete(id) {
         const temp = todos.filter(item => item.id !== id);
-        setTodos(temp) 
+        setTodos(temp)
     }
 
     return (
@@ -73,11 +72,11 @@ const TodoApp = () => {
             </form>
             <div className="todosContainer">
                 {todos.map((todo) => (
-                    <Todo key={todo.id} todo={todo} onUpdate={handleUpdate} onDelete={handleDelete}/>
+                    <Todo key={todo.id} todo={todo} onUpdate={handleUpdate} onDelete={handleDelete} />
                 ))}
             </div>
         </div>
     );
 }
- 
+
 export default TodoApp;
