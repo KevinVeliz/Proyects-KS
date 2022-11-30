@@ -36,7 +36,6 @@
   padding: 10px 20px;
 }
 
-
 .todosContainer {
   display: flex;
   flex-direction: column;
@@ -48,7 +47,6 @@
   padding: 10px;
   background-color: white;
 }
-
 .todoTitle {
   flex: 1;
   font-size: 20px;
