@@ -1,16 +1,16 @@
-<img src="./src/assets/logo.png" height="50px"/>
+<img src="https://user-images.githubusercontent.com/65980001/204894077-abc29c5b-6cf1-4a35-810a-baece92a85e9.png" height="50px"/>
 
 # Kruger Star PlayGround
 
 > Segundo Proyecto
 
-<img src="./src/assets/todo.png" height="300px"/>
+<img src="https://user-images.githubusercontent.com/65980001/204893673-f50d3840-72ec-4083-aec5-06a4b55a9dc8.png" width="400px"/>
 
 ## Built with 
 
 - JavaScript 
 - React.js 18
-- Netlify
+- Vercel
 - HTML + CSS
 
 ## Live Demo
