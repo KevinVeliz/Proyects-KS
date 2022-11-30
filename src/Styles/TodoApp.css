@@ -14,7 +14,6 @@
   text-shadow: gray 6px 6px 8px;
   font-style: italic;
 }
-
 .todoCreateForm {
 	display: flex;
 	gap: 5px;
