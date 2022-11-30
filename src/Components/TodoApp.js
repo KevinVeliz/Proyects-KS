@@ -1,12 +1,19 @@
 import '../Styles/TodoApp.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Todo from "./todo";
+
+const todosList = () =>{
+    return JSON.parse(localStorage.getItem("To-do"));
+}
 
 const TodoApp = () => {
 
     const [title, setTitle] = useState("");
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(todosList);
 
+   useEffect(()=>{
+    localStorage.setItem("To-do", JSON.stringify(todos));
+   })
 
     function handleInput(e) {
         const value = e.target.value
@@ -40,8 +47,9 @@ const TodoApp = () => {
                 setTitle('')
             }
         }
-        
+       
     }
+
 
     function handleUpdate(id, value) {
         const temp = [...todos];
@@ -51,7 +59,7 @@ const TodoApp = () => {
     }
 
     function handleDelete(id) {
-        const temp = todos.filter(item => item.id != id);
+        const temp = todos.filter(item => item.id !== id);
         setTodos(temp) 
     }
 
