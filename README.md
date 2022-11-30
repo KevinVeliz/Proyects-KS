@@ -1,8 +1,8 @@
-<img src="./src/assets/image-removebg-preview%20(2).png.png" height="50px"/>
+<img src="./src/assets/logo.png" height="50px"/>
 
 # Kruger Star PlayGround
 
-> Primer proyecto
+> Segundo Proyecto
 
 <img src="./src/assets/todo.png" height="300px"/>
 
@@ -31,11 +31,9 @@
 - Juan Sotomayor - Tutor Kruger Star
 
 ## Show your support
-
 Give a ⭐ if you like this project!
 ## Acknowledgments
 - Desing by: JS
 
 ## 📝 License
-
 This project is [MIT](./MIT.md) licensed.
