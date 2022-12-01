@@ -12,6 +12,8 @@
 - React.js 18
 - Vercel
 - HTML + CSS
+- [Weather Api](https://www.weatherapi.com/)
+- [Unsplash Api](https://unsplash.com/developers)
 
 ## Live Demo
 
