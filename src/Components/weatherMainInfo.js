@@ -14,9 +14,10 @@ export default function WeatherMainInfo({ weather }) {
     }
     fetchImages();
 
-
+    let hours
     let now = dayjs(weather.location.localtime);
     let dayday = now.format("dddd D, MMM YYYY")
+    hours = now.format("HH:mm")
 
     return (
 
@@ -42,7 +43,7 @@ export default function WeatherMainInfo({ weather }) {
                                     {weather?.current.temp_c}°
                                 </div>
                                 <div className={styles.dayday}>
-                                    {dayday} 
+                                    {hours} - {dayday} 
                                 </div>
                                 <div className={styles.condition}>
                                     {weather?.current.condition.text}

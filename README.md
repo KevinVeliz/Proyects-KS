@@ -9,7 +9,7 @@
 ## Built with 
 
 - JavaScript 
-- React.js 18
+- React.js **18**
 - Vercel
 - HTML + CSS
 - [Weather Api](https://www.weatherapi.com/)
