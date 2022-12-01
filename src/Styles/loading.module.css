@@ -1,0 +1,53 @@
+.loadingContainer {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  position: relative;
+  height: 480px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px silver;
+
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    43deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  animation: rotation 0.5s linear infinite;
+}
+
+.loader div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(358deg);
+  }
+}

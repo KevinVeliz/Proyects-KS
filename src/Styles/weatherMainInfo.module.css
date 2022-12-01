@@ -1,0 +1,126 @@
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  position: relative;
+}
+
+.home{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ border-radius: 30px;
+ opacity: 1;
+}
+
+.content{
+  position: absolute; 
+  background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 10px silver;
+  display: flex;
+	flex-direction: column;
+  border-radius: 30px;
+  height: 480px;
+  width: 300px;
+}
+
+.imgweather{
+  display: flex;
+  justify-content: center;
+
+}
+
+.mainInfo {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+	height: 480px;
+	width: 40%;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 10px silver;
+  
+}
+
+.city {
+	font-size: 32px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.country {
+	font-size: 20px;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.condition {
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.current {
+	font-weight: bold;
+	display: inline-block;
+	margin: 20px auto;
+	background-color: rgba(255, 226, 226, 0.2);
+	border-radius: 16px;
+	padding: 15px 25px;
+	color: rgb(0, 0, 0);
+	font-size: 100px;
+	font-weight: 900;
+	text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+	width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.cards {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+  .mainInfo {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+	height: 480px;
+	width: 90%;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 10px silver;
+}
+
+.map {
+  margin-top: 10px;
+	width: 50%;
+}
+}
