@@ -19,7 +19,7 @@
 
 ## Run it
  ### Setup
- - Clone this repo using `git clone https://github.com/KevinVeliz/Proyects-KS`
+ - Clone this repo using `git clone --branch To-do https://github.com/KevinVeliz/Proyects-KS`
  ### Commands
  - `npm i` 
  - `npm start`
