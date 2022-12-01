@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../Styles/weatherMainInfo.module.css';
+import dayjs from 'dayjs';
 
 export default function WeatherMainInfo({ weather }) {
 
@@ -12,7 +13,10 @@ export default function WeatherMainInfo({ weather }) {
         setImages(resp)
     }
     fetchImages();
-    console.log(images)
+
+
+    let now = dayjs(weather.location.localtime);
+    let dayday = now.format("dddd D, MMM YYYY")
 
     return (
 
@@ -24,15 +28,21 @@ export default function WeatherMainInfo({ weather }) {
                         <div className={styles.imgweather}>
                             <img src={`http:${weather?.current.condition.icon}`} alt={weather?.current.condition.icon} width="128" />
                         </div>
+
                         <div className={styles.city}>
                             {weather?.location.name}
                         </div>
+
                         <div className={styles.country}>{weather?.location.country}</div>
+
                         <div className={styles.row}>
 
                             <div className={styles.weatherConditions}>
                                 <div className={styles.current}>
                                     {weather?.current.temp_c}°
+                                </div>
+                                <div className={styles.dayday}>
+                                    {dayday} 
                                 </div>
                                 <div className={styles.condition}>
                                     {weather?.current.condition.text}
@@ -46,7 +56,6 @@ export default function WeatherMainInfo({ weather }) {
                 <div className={styles.map}>
                     <iframe
                         title="mapa"
-
                         src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d303660.83035371645!2d${weather.location.lon}!3d${weather.location.lat}12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1669848352782!5m2!1ses-419!2sec" width="600" height="450`}
                         style={{ border: 0, height: 520, width: 430, borderRadius: 30 }}
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
