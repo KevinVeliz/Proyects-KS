@@ -8,7 +8,7 @@ const AppContext = createContext({
 });
 
 const init =() =>{
-    return JSON.parse(localStorage.getItem('books'));
+    return JSON.parse(localStorage.getItem('books')) || [];
 }
 
 export default function Store({ children }) {
