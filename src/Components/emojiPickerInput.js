@@ -8,11 +8,11 @@ export default function EmojiPickerInput() {
 
     const handleSubmit = () => {
         console.log(inputRef.current.value)
-        if(inputRef.current.value !== ''){
+        if (inputRef.current.value !== '') {
             navigator.clipboard.writeText(inputRef.current.value)
             alert('Copied')
         }
-        else{
+        else {
             alert('Insert text')
         }
     };
@@ -20,11 +20,13 @@ export default function EmojiPickerInput() {
 
     return (
         <div className='emojihead'>
-            <h1 className='text-title'>Selector Emojis</h1>
+                <h1 className='text-title'>Selector Emojis</h1>
+            
             <div className='container'>
-                <input ref={inputRef} className='inputemoji'/>
+                <input ref={inputRef} className='inputemoji' />
                 <button onClick={handleSubmit} className='button-cards'>Copy</button>
             </div>
+
             <div className='cards'>
                 <EmojiPicker ref={inputRef} />
             </div>

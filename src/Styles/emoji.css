@@ -1,7 +1,7 @@
 .emojiContainer {
 	position: absolute;
 	width: 450px;
-	height: 400px;
+	height: 350px;
 	border-radius: 30px;
 	border-radius: 10px;
 	display: flex;
@@ -11,17 +11,17 @@
 	overflow: scroll;
 	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: 0px 0px 10px silver;
+    
 }
 
 .emojihead {
-	background-color: #282c34;
-	min-height: 100vh;
+	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+	
 }
 
 .inputemoji {

@@ -23,8 +23,6 @@ export function EmojiPicker(props, inpuRef) {
     })
   }, [])
 
-
-
   function handleClickOpen() {
     setShowEmojiPanel(!showEmojiPanel)
   }
@@ -73,7 +71,7 @@ export function EmojiPicker(props, inpuRef) {
       {showEmojiPanel ?
         <div className='emojiContainer'>
           <input type='text' style={{ marginBottom: '10px', border:'none',padding:'10px', borderRadius:'5px'}} onChange={(e) => setSearch(e.target.value)} />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(9, 1fr)'}}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)'}}>
             {handleSearch().map((emoji) => (
               <div style={{ height: '50px' }} key={emoji.unicodeName}>
                 <EmojiButton key={emoji.unicodeName} emoji={emoji} onClick={handleOnClickEmoji} />
