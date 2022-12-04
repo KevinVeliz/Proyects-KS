@@ -2,7 +2,7 @@
 
 # Kruger Star WeatherApp
 
-> Proyecto WeatherApp
+> Proyecto Bookstore with useContext
 
 <img src="src/Assets/mockup.png" width="800px"/>
 
@@ -12,12 +12,10 @@
 - React.js **18**
 - Vercel
 - HTML + CSS
-- [Weather Api](https://www.weatherapi.com/)
-- [Unsplash Api](https://unsplash.com/developers)
 
 ## Live Demo
 
-[live demo link](https://weather-ks.vercel.app/)
+[live demo link](https://bookstore-ks.netlify.app/)
 
 ## Run it
  ### Setup
