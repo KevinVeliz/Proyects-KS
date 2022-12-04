@@ -125,7 +125,21 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-content: space-around;
+        width: 0px;
 	}
+
+    .inputFormat {
+        width: 320px;
+        border: 0.1px solid rgb(114, 114, 114);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .inputsGeneral{
+        border: 0.1px solid rgb(114, 114, 114);
+        border-radius: 10px;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 414px) {
