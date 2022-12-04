@@ -16,6 +16,8 @@ export default function Book({ item }) {
 		textDecoration: "none",
 	};
 
+	
+
 	function handleDelete(itemId) {
 		let data = JSON.parse(localStorage.getItem("books"));
 		const isDelete = window.confirm(`Are you sure you want to delete`);
@@ -34,6 +36,7 @@ export default function Book({ item }) {
 
 	return (
 		<div style={bookContainerStyle}>
+			<h1 className="TitleViewGeneral">{item.title}</h1>
 				<img src={item.cover} width="300" height="400px" alt={item.title} />
 			<Link to={`/view/${item.id}`} style={bookInfoStyle}>
 				<button className="buttonView">View more</button>

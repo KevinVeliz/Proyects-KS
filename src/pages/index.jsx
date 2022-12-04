@@ -20,7 +20,7 @@ export default function Index() {
 				</Layout>
 			) : (
 				<Layout>
-					<div className="container">
+					<div className="containerView">
 						{store.items.map((item) => (
 							<>
 								<Book key={item.id} item={item} />
