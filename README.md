@@ -1,6 +1,6 @@
 <img src="src/Assets/logo.png" height="50px"/>
 
-# Kruger Star WeatherApp
+# Kruger Star Bookstore
 
 > Proyecto Bookstore with useContext
 
