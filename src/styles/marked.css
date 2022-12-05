@@ -1,0 +1,24 @@
+.marketStyle {
+	background-color: yellow;
+	font-weight: bolder;
+	border-radius: 2px;
+}
+
+.itemStyle {
+	color: black;
+	display: block;
+	padding: 10px;
+    width: 100%;
+    border: #4c91ba;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.itemStyle:hover {
+	background-color: #4c91ba;
+	color: white;
+}
+
+.itemStyle span {
+	color: black;
+}
