@@ -19,7 +19,7 @@
 
 ## Run it
  ### Setup
- - Clone this repo using `git clone --branch Books https://github.com/KevinVeliz/Proyects-KS`
+ - Clone this repo using `git clone --branch search https://github.com/KevinVeliz/Proyects-KS`
  - Go to cloned folder `cd Proyects-KS`
  - Run command `code .`
  ### Commands to run locally in the cmd
