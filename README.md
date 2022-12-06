@@ -10,7 +10,7 @@
 
 - JavaScript 
 - React.js **18**
-- Vercel
+- Netlify
 - HTML + CSS
 
 ## Live Demo
