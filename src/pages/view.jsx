@@ -13,6 +13,7 @@ export default function View() {
 	let newAuthor, newTitle, newReview, newIntro;
 	const params = useParams();
 	const store = useAppContext();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const book = store.getItem(params.bookId);
@@ -48,6 +49,7 @@ export default function View() {
 
 		let totalJSON = JSON.stringify(values);
 		localStorage.setItem("books", totalJSON);
+		navigate('/')
 		window.location.reload();
 	}
 
